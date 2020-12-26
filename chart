@@ -1,0 +1,21 @@
+if ($('#pie-chart-widget').length) {
+            var _ctx10 = $('#pie-chart-widget')[0].getContext('2d');
+            var courses = {{json_encode($courses)}};
+        
+            var _myPieChart = new Chart(_ctx10, {
+                type: 'pie',
+                data: {
+                    labels: ["course terminée", "course en course"],
+                    datasets: [{
+                        data: courses,
+                        backgroundColor: ["#FF8B26", "#FFC533", "#285FD3"],
+                        hoverBackgroundColor: ["#FF8B26", "#FFC533", "#285FD3"],
+                        borderWidth: 5,
+                        borderColor: "#fff"
+                    }]
+                }
+            });
+        }
+        
+        
+        
