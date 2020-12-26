@@ -19,3 +19,11 @@ if ($('#pie-chart-widget').length) {
         
         
         
+// HTML
+<div class="report-box">
+                                    <div class="box p-5">
+                                        <div class="flex">
+                                            <canvas id="pie-chart-widget" height="200"></canvas> 
+                                        </div>
+                                    </div>
+                                </div>
